@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/comman.css">
+    <title>Result</title>
+</head>
+<body>
+    <header class="topnav">
+        <ul>
+            <li>Nucleus</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <input type="text" placeholder="search">
+    </header>
+    <div class="report-page">
+        <h1>Heart Attack Survival Prediction</h1>
+        <h2>Result</h2>
+        <p>{{prediction.name}} based on the information you provided</p>
+        {% if prediction.rfc == 0 %}
+            <p>You have a chance of surviving a heart attack.</p>
+        {% else %}
+            <p>Consult your Doctor! You may have a chance of surviving a heart attack.</p>
+        {% endif %}
+        <p>Thank you for using our service.</p>
+        <a href=""><input type="submit" value="Start Prediction"></a>
+    </div>
+    <footer class="footer">
+        <ul>
+            <li>Copyright 2022-2023</li>
+        </ul>
+    </footer>
+</body>
+</html>

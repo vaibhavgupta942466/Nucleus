@@ -1,0 +1,85 @@
+.topnav {
+    overflow: hidden;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+
+}
+.footer{
+    overflow: hidden;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.topnav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.topnav ul li{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.topnav ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav li:hover {
+    background-color: lightgray;
+}
+
+.topnav li:first-child:hover{
+    background-color: transparent;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 0px 8px ;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-right: 1em;
+    font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
